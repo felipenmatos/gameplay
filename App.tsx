@@ -6,6 +6,7 @@ import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhan
 import AppLoading from 'expo-app-loading';
 
 import { SingIn } from './src/screens/SingIn';
+import { Background } from './src/components/Background';
 
 export default function App() {
 
@@ -21,13 +22,13 @@ export default function App() {
   }
 
   return (
-    <>
+    <Background>
       <StatusBar 
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
       <SingIn />
-    </>
+    </Background>
   );
 }
